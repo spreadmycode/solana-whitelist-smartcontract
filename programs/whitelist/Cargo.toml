@@ -1,0 +1,19 @@
+[package]
+name = "whitelist"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "whitelist"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.18.0"
+borsh = { version = "0.9", features = ["const-generics"]}

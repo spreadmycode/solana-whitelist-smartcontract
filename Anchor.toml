@@ -1,0 +1,12 @@
+[programs.localnet]
+whitelist = "G9B3QBo3BJAbn37XmaBNN4ybjLXuiUSRxwgjGdyau85J"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "mocha -t 1000000 tests/"
